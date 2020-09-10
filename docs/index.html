@@ -8,11 +8,6 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 </head>
-<script>
-  if (typeof navigator.serviceWorker !== 'undefined') {
-    navigator.serviceWorker.register('sw.js')
-  }
-</script>
 <body>
   <div id="app"></div>
   <h3>欢迎来到自动化测试教程</h3>
@@ -23,6 +18,9 @@
       loadSidebar: true,
       subMaxLevel: 3
     }
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 </body>
